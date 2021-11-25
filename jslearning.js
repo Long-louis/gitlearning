@@ -6,7 +6,7 @@
 
 // result = str.search(/a[be]c/);
 // result = str.replace(/[A-z]/gi, "");
-var reg = /aaa/;
-
-console.log(result);
+// var reg = /^a|c$/;
+var reg = /^1[3-9]([0-9]){9}$/
+console.log(reg.test('13573753388'));
 
