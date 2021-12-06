@@ -79,30 +79,52 @@
 		
 		</script> -->
     <script>
-
       window.onload = function () {
         var btn01 = document.getElementById("btn01");
         btn01.onclick = function () {
           var bj = document.getElementById("bj");
           alert(bj.innerHTML);
         };
-		var btn02 = document.getElementById("btn02");
-		btn02.onclick = function () {
-			var lis = document.getElementsByTagName("li");
-			// alert(lis.length);
-			for(i=0;i < lis.length;i++){
-				alert(lis[i].innerHTML);
-			};
+        var btn02 = document.getElementById("btn02");
+        btn02.onclick = function () {
+          var lis = document.getElementsByTagName("li");
+          // alert(lis.length);
+          for (i = 0; i < lis.length; i++) {
+            alert(lis[i].innerHTML);
+          }
+        };
+        var btn03 = document.getElementById("btn03");
+        btn03.onclick = function () {
+          var inputs = document.getElementsByName("gender");
+          // alert(inputs);
+          for (var i = 0; i < inputs.length; i++) {
+            alert(inputs[i].value);
+          }
+        };
+        var btn04 = document.getElementById("btn04");
+        btn04.onclick = function () {
+          var city = document.getElementById("city");
+          var lis = city.getElementsByTagName("li");
+          // console.log(lis.length);
+          // for(var i = 0 ; i < lis.length; i++ ){
+          // 	alert(lis[i].innerHTML);
+          // };
+        };
+        var btn05 = document.getElementById("btn05");
+		btn05.onclick = function () {
+			var city = document.getElementById("city");
+			 var cns = city.childNodes;
+			alert(cns.length);
+			var cns2 = city.children;
+			alert(cns2.length); 
 		};
-		var btn03 = document.getElementById("btn03");
-		btn03.onclick = function () {
-			var inputs = document.getElementsByName("gender");
-			// alert(inputs);
-			for(var i = 0 ; i < inputs.length ; i++){
-				alert(inputs[i].value);
-			};
+		var btn06 = document.getElementById("btn06");
+		btn06.onclick = function () {
+			var phones = document.getElementById("phone"); 
 		}
+
       };
+
     </script>
   </head>
   <body>
