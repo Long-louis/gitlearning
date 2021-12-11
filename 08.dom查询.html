@@ -111,20 +111,25 @@
           // };
         };
         var btn05 = document.getElementById("btn05");
-		btn05.onclick = function () {
-			var city = document.getElementById("city");
-			 var cns = city.childNodes;
-			alert(cns.length);
-			var cns2 = city.children;
-			alert(cns2.length); 
-		};
-		var btn06 = document.getElementById("btn06");
-		btn06.onclick = function () {
-			var phones = document.getElementById("phone"); 
-		}
-
+        btn05.onclick = function () {
+          var city = document.getElementById("city");
+          var cns = city.childNodes;
+          alert(cns.length);
+          var cns2 = city.children;
+          alert(cns2.length);
+        };
+        var btn06 = document.getElementById("btn06");
+        btn06.onclick = function () {
+          var phones = document.getElementById("phone");
+        };
+        function myClick(btnStr,fun) {
+          var btn = document.getElementById(btnStr);
+        btn.onclick = fun;
+        }
+        myClick("btn07",function () {
+          alert("hello");
+        })  
       };
-
     </script>
   </head>
   <body>
