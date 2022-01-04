@@ -171,7 +171,42 @@
 	
 </script> -->
 <script>
-	
+	window.onload = function () {
+		// 1.checkallbtn
+		var items = document.getElementsByName("items");
+		var checkedallbtn = document.getElementById("checkedAllBtn");
+		checkedallbtn.onclick = function () {
+			
+			for (let i = 0; i < items.length; i++) {
+				items[i].checked = true;
+				
+			}
+		}
+		var checkednobtn = document.getElementById("checkedNoBtn");
+		checkednobtn.onclick = function () {
+			
+			for (let i = 0; i < items.length; i++) {
+				items[i].checked = false;
+				
+			}
+		};
+		var checkedrevbtn = document.getElementById("checkedRevBtn");
+		checkedrevbtn.onclick = function () {
+			
+			for (let i = 0; i < items.length; i++) {
+				items[i].checked = !items[i].checked;
+				
+			}
+		};
+		var sendBtn = document.getElementById("sendBtn");
+		sendBtn.onclick = function () {
+			for(i = 0; i < items.length; i++){
+				if (items[i].checked) {
+					alert(items[i].value);
+				}
+			}
+		};
+	};
 </script>
 </head>
 <body>
