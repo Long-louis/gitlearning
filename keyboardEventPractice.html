@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+            window.onload = function () {
+                var div = document.getElementById("div");
+      document.onkeydown = function (event) {
+        var speed = 10
+          switch (event.keyCode) {
+                    case 37:
+                        div.style.left = div.offsetLeft - speed + 'px';
+                        break;
+                    case 38:
+                        div.style.top = div.offsetTop - speed + 'px';
+                        break;
+                    case 39:
+                        div.style.left = div.offsetLeft + speed + 'px';
+                        break;
+                    case 40:
+                        div.style.top = div.offsetTop + speed + 'px';
+                        break;
+
+
+                }
+            }
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      id="div"
+      style="height: 100px; width: 100px; background-color: red ;position: absolute;"
+    ></div>
+  </body>
+</html>
