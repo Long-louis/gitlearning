@@ -52,7 +52,7 @@
         for (let index = 0; index < allA.length; index++) {
           allA[index].onclick = function () {
             var tr = this.parentNode.parentNode;
-			tr.
+			
             var name = tr.getElementsByTagName("td")[0].innerHTML;
             if (confirm("确认删除" + name + "吗")) {
               tr.parentNode.removeChild(tr);
