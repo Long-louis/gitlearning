@@ -1,0 +1,20 @@
+body {
+  background-color: #bfa;
+}
+@c: box1;
+.@{c} {
+  background-image: url("@{c}/1.jpg");
+}
+.box1 {
+  width: 100px;
+  height: $width;
+}
+.box3 {
+  background-color: #aaa;
+}
+.box2:extend(.box1) {
+  color: #bfa;
+}
+.box2 {
+  &:extend(.box3);
+}

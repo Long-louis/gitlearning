@@ -1,0 +1,20 @@
+body {
+  background-color: #bfa;
+}
+.box1,
+.box2 {
+  background-image: url("box1/1.jpg");
+}
+.box1,
+.box2 {
+  width: 100px;
+  height: 100px;
+}
+.box3,
+.box2 {
+  background-color: #aaa;
+}
+.box2 {
+  color: #bfa;
+}
+/*# sourceMappingURL=./syntax.css.map */

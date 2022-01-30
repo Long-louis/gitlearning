@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.w,
+header,
+.banner,
+nav {
+  width: 17.325rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 5.33333333vw;
+  background-color: #eff0f4;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  height: 4.375rem;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  color: #292a3f;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+header a i {
+  color: #999999;
+  font-size: 0.5rem;
+}
+.banner img {
+  width: 100%;
+}
+nav {
+  display: flex;
+  height: 8.225rem;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  font-size: 0.7rem;
+  width: 8.175rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  color: #fff;
+  border-radius: 0.25rem;
+}
+nav a i {
+  margin: 0 0.8rem 0 0.95rem;
+}
+nav .course {
+  background-image: linear-gradient(to right, red, yellow);
+}
+nav .teacher {
+  background-image: linear-gradient(to right, red, yellow);
+}
+nav .sub {
+  background-image: linear-gradient(to right, red, yellow);
+}
+nav .download {
+  background-image: linear-gradient(to right, red, yellow);
+}
+/*# sourceMappingURL=./mobile.css.map */

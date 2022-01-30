@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@total-width: 750;
+.w {
+  width: (693/40rem);
+  margin: 0 auto;
+}
+html {
+  // set rem ratio(比值)
+  font-size: (100vw / @total-width*40);
+  // set background color in all
+  background-color: #eff0f4;
+}
+a {
+  text-decoration: none;
+}
+header:extend(.w) {
+  display: flex;
+  height: (175/40rem);
+  // main axis alignment
+  justify-content: space-between;
+  // cross axis alignment
+  align-items: center;
+  a {
+    color: #292a3f;
+    text-decoration: none;
+    font-size: (50/40rem);
+    i {
+      color: #999999;
+      font-size: (20/40rem);
+    }
+  }
+}
+.banner:extend(.w){
+  img {
+    width: 100%;
+  }
+}
+nav:extend(.w) {
+  display: flex;
+  height: (329/40rem);
+  flex-flow: row wrap;
+  // main axis alignment --a
+  justify-content: space-between;
+  // cross axis alignment --a
+  align-items: center;
+  // set four blocks
+  a {
+    font-size: .7rem;
+    width: (327/40rem);
+    height: (104/40rem);
+    line-height: (104/40rem);
+    color: #fff;
+    border-radius: (10/40rem);
+    i{
+      margin: 0 (32/40rem)  0 (38/40rem) ;
+    }
+  }
+  .course {
+    background-image: linear-gradient(to right,red, yellow);
+  }
+  .teacher {
+    background-image: linear-gradient(to right,red, yellow);
+  }
+  .sub {
+    background-image: linear-gradient(to right,red, yellow);
+  }
+  .download {
+    background-image: linear-gradient(to right,red, yellow);
+  }
+}
